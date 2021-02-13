@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto cronometro - JavaScript</title>
+    <style>
+        .container {
+            text-align: center;
+
+        }
+        button{
+            background: #069;
+            color: white;
+            font-size: 32px;
+            padding: 8px 20px;
+            cursor: pointer;
+            border:0;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <audio id="sound" src="./alarme.mp3" style="display:none;"></audio>
+
+    <div class="container">
+        <h2>Minutos</h2>
+        <select name="minutos" id="minutos"></select>
+
+        <h2>Segundos</h2>
+        <select name="segundos" id="segundos"></select></br>
+
+        <button id="comecar">Começar</button>
+
+        <div id="display">
+            <h3></h3>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
