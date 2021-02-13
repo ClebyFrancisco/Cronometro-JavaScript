@@ -19,12 +19,37 @@
             border:0;
             margin-top: 10px;
         }
+        #display{
+            background-color:rgb(116, 201, 243);
+            width:200px;
+            height:200px;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            align-items: center;
+            text-align: center;
+            margin: 10px auto;
+            
+        }
+        #display h3 {
+            
+            text-align: center;
+            padding:0;
+            color: white;
+            font-size:55px;
+            align-items: center;
+            text-align:center;
+            margin-top: 35%;
+        }
     </style>
 </head>
 <body>
     <audio id="sound" src="./alarme.mp3" style="display:none;"></audio>
 
     <div class="container">
+
+       <!--<h2>Horas</h2>
+        <select name="horas" id="horas"></select>-->
+
         <h2>Minutos</h2>
         <select name="minutos" id="minutos"></select>
 
@@ -34,7 +59,7 @@
         <button id="comecar">Começar</button>
 
         <div id="display">
-            <h3></h3>
+            <h3>00:00</h3>
         </div>
     </div>
     <script src="./script.js"></script>
