@@ -47,7 +47,7 @@ comecar.addEventListener('click', function() {
         }
         display.childNodes[1].innerHTML =  minutoAtual + ":" + segundoAtual;
 
-    }, 1);
+    }, 1000);
 
 });
 
